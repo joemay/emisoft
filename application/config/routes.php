@@ -38,12 +38,12 @@
 |
 */
 
-$route['default_controller'] = "login";
+$route['default_controller'] = "LoginController";
 
 
-$route['admin'] = "admin/index/0";
-$route['admin/index'] = "admin/index/0";
-$route['admin/index/(:num)'] = "admin/index/$1";
+$route['CategoriasController'] = "CategoriasController/index/0";
+$route['CategoriasController/index'] = "CategoriasController/index/0";
+$route['CategoriasController/index/(:num)'] = "CategoriasController/index/$1";
 
 $route['asignaturas'] = "admin/asignaturas/0";
 $route['admin/asignaturas'] = "admin/asignaturas/0";
