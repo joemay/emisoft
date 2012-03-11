@@ -33,9 +33,9 @@ class CategoriasController extends CI_Controller {
 		redirect("CategoriasController");
 	}
 	
-	public function mostrarFormularioCategoria()
+	public function verFormularioCategoria()
 	{
-		$this->load->view('CategoriaForm');
+		$this->load->view('CategoriaView');
 	}
 	
 

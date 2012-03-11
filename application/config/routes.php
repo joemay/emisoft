@@ -45,13 +45,12 @@ $route['CategoriasController'] = "CategoriasController/index/0";
 $route['CategoriasController/index'] = "CategoriasController/index/0";
 $route['CategoriasController/index/(:num)'] = "CategoriasController/index/$1";
 
-$route['asignaturas'] = "admin/asignaturas/0";
-$route['admin/asignaturas'] = "admin/asignaturas/0";
-$route['admin/asignaturas/(:num)'] = "admin/asignaturas/$1";
+$route['DocumentosController'] = "DocumentosController/index/0";
+$route['DocumentosController/index'] = "DocumentosController/index/0";
+$route['DocumentosController/index/(:num)'] = "DocumentosController/index/$1";
 
-$route['semestres'] = "admin/semestres/0";
-$route['admin/semestres'] = "admin/semestres/0";
-$route['admin/semestres/(:num)'] = "admin/semestres/$1";
+
+
 
 $route['404_override'] = '';
 

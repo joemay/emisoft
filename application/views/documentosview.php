@@ -12,7 +12,7 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
-	<title>EMISOFT - Categor&iacute;as</title>
+	<title>EMISOFT - Documentos</title>
 	
 	<?= link_tag("css/style.css"); ?>
     <?= link_tag("css/jquery.wysiwyg.css"); ?>
@@ -46,13 +46,13 @@
 					<div class="bheadl"></div>
 					<div class="bheadr"></div>
 					
-					<h2>Categor&iacute;as</h2>
+					<h2>Documentos</h2>
 					
 					
 					
 					<ul>
 						<li>
-						<a href="<?= site_url("CategoriasController/mostrarFormularioCategoria"); ?>"> Agregar Categor&iacute;a
+						<a href="<?= site_url("DocumentosController/mostrarFormularioDocumento"); ?>"> Agregar Documento
 						</a>
 						</li>
 					</ul>
@@ -69,7 +69,7 @@
 							
 									<th>Nombre</th>
                                     <th>Descripcion</td>
-                                    <th>Departamento</th>
+                                    <th>Categor&iacute;a</th>
 									<th>&nbsp;</th>
 								</tr>
 							</thead>
@@ -78,9 +78,9 @@
 					
 					
 					<? foreach($items as $item): ?>
-								<? $detailsController =  site_url("CategoriasController/detallesCategoria/" . $item->id ); ?>
-                                <? $deleteController =  site_url("CategoriasController/eliminarCategoria/" . $item->id ); ?>
-                                <? $editController =  site_url( "CategoriasController/editarCategoria/" . $item->id ); ?>
+								<? $detailsController =  site_url("DocumentosController/detallesDocuemento/" . $item->id ); ?>
+                                <? $deleteController =  site_url("DocumentosController/eliminarDocumento/" . $item->id ); ?>
+                                <? $editController =  site_url( "DocumentosController/editarDocumento/" . $item->id ); ?>
 
                                 <tr>
                                     <td><?= $item->nombre; ?>
@@ -89,7 +89,7 @@
                                     <td><?= $item->descripcion; ?>
                                     </td>
                                     
-                                    <td><?= $item->departamento_id; ?>
+                                    <td><?= $item->categoria_id; ?>
                                     </td>
                                     
                                   

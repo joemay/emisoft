@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="<?= site_url("CategoriasController");?>">Categor&iacute;as</a></li>
 
-                <li><a href="<?= site_url("DcouementosController");?>">Documentos</a></li>
+                <li><a href="<?= site_url("DocumentosController");?>">Documentos</a></li>
 
             </ul>
         </li>
