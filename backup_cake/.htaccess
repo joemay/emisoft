@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond $1 !^(index.php|css|js|uploads|php|img|images|robots.txt)
+RewriteRule ^(.*)$ /emisoft/index.php/$1 [L]

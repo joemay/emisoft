@@ -1,0 +1,984 @@
+2012-03-11 12:00:00 Error: [MissingActionException] Action AppController::View() could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-11 12:03:37 Error: [MissingControllerException] Controller class CategoriaController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 12:04:02 Error: [MissingControllerException] Controller class CategoriascontrollerController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 12:20:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Departamento.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(18): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-11 12:20:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Departamento.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(18): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-11 12:23:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Departamento.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(18): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-11 12:24:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Departamento.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(18): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-11 12:24:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Departamento.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(18): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-11 12:24:17 Error: [MissingActionException] Action CategoriasController::view() could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-11 12:25:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Departamento.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(18): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-11 13:17:14 Error: [MissingActionException] Action CategoriasController::view() could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-11 13:25:04 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Categorias/view.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 13:25:13 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Categorias/view.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 13:26:53 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Categorias/view.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 13:26:54 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Categorias/view.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 13:26:55 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Categorias/view.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 13:27:47 Error: [MissingControllerException] Controller class CategoriasController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 13:27:48 Error: [MissingControllerException] Controller class CategoriasController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 13:27:50 Error: [MissingControllerException] Controller class CategoriasController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 13:51:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'departamento_id' cannot be null
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `em...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(984): DboSource->execute('INSERT INTO `em...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(1705): DboSource->create(Object(Categoria), Array, Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(35): Model->save(Array)
+#5 [internal function]: CategoriasController->add()
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 13:59:21 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 14:11:26 Error: [MissingControllerException] Controller class AddController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:38:04 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('3')
+#5 [internal function]: CategoriasController->delete('3')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 15:38:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('3')
+#5 [internal function]: CategoriasController->delete('3')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 15:38:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 15:39:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('3')
+#5 [internal function]: CategoriasController->delete('3')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 15:39:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('3')
+#5 [internal function]: CategoriasController->delete('3')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 15:49:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 15:52:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:52:36 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:52:36 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:52:57 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:52:58 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:52:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:53:04 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:53:20 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:53:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 15:57:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 15:58:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-11 16:34:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Departamento.departamento_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Emplead...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Emplead...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Emplead...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Empleado), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/EmpleadosController.php(32): Model->find('all')
+#6 [internal function]: EmpleadosController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(EmpleadosController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpleadosController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-11 16:35:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Departamento.departamento_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Emplead...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Emplead...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Emplead...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Empleado), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/EmpleadosController.php(32): Model->find('all')
+#6 [internal function]: EmpleadosController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(EmpleadosController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpleadosController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-11 16:44:25 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:47:58 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:49:21 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:49:24 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:49:31 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:49:34 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:51:10 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:52:36 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:52:39 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:54:48 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpleadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 16:54:50 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpleadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 16:54:51 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpleadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 16:54:52 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpleadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 16:54:56 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpleadosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 16:55:18 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:19 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:20 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:21 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:22 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:22 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:26 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:26 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:27 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:27 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:55:28 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 16:57:55 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 16:57:56 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 16:57:56 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 16:57:57 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 22:18:50 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 22:18:50 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 22:21:49 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 22:21:50 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 22:21:51 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 22:21:52 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Empleados/login.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-11 23:10:20 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(3380): Model->setSource('users')
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(1278): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/Helper/FormHelper.php(191): Model->schema()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/Helper/FormHelper.php(444): FormHelper->_introspectModel('User', 'fields')
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(908): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(872): View->_evaluate('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(463): View->_render('/Applications/M...')
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#10 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-03-11 23:17:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(86): Model->find('first', Array)
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('1', '1')
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Component/AuthComponent.php(636): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Component/AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/UsersController.php(12): AuthComponent->login()
+#10 [internal function]: UsersController->login()
+#11 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-03-11 23:41:43 Error: [MissingControllerException] Controller class DocumentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 23:43:22 Error: [MissingControllerException] Controller class DocumentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 23:43:44 Error: [MissingActionException] Action UsersController::categorias() could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-11 23:44:12 Error: [MissingActionException] Action UsersController::categorias() could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-11 23:46:49 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-11 23:55:44 Error: [MissingActionException] Action UsersController::categorias() could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-11 23:55:53 Error: [MissingActionException] Action UsersController::categorias() could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-11 23:58:21 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Pages/diplay/home.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName('diplay/home')
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render('diplay/home', NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/PagesController.php(80): Controller->render('diplay/home')
+#3 [internal function]: PagesController->display('diplay', 'home')
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-03-12 00:03:25 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:03:35 Error: [MissingControllerException] Controller class LoginController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:03:43 Error: [MissingControllerException] Controller class HomeController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:09:12 Error: [MissingControllerException] Controller class HomeController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:19:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:19:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:19:27 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:19:33 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:19:54 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:19:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 00:24:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-12 11:12:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(84): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-12 11:30:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(95): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-12 11:47:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(27): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-12 11:49:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(27): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-12 11:49:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(27): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-12 11:49:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(27): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-12 11:49:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(27): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-12 11:49:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(27): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-12 11:49:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(27): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-12 11:57:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria_id' in 'on clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(Categoria), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(27): Model->find('all')
+#6 [internal function]: CategoriasController->index()
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-03-12 12:02:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(95): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-12 12:18:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`documentos`, CONSTRAINT `fk_documentos_categorias1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Categor...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Categor...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(Categoria), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(95): Model->delete('1')
+#5 [internal function]: CategoriasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-12 12:20:25 Error: [MissingControllerException] Controller class DocumentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 12:24:01 Error: [MissingControllerException] Controller class DocumentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 12:26:23 Error: [MissingControllerException] Controller class DocumentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 12:54:14 Error: [MissingControllerException] Controller class TestController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 12:58:25 Error: [MissingControllerException] Controller class CategoriaTest.phpController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 12:58:36 Error: [MissingControllerException] Controller class TestController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 12:59:36 Error: [MissingActionException] Action AppController::Test() could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-03-12 13:11:09 Error: [MissingControllerException] Controller class Test.php&debug=1Controller could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 13:13:39 Error: [MissingControllerException] Controller class Categoriatest.phpController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 13:23:22 Error: [MissingControllerException] Controller class Test.php&debug=1Controller could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 13:25:02 Error: [MissingControllerException] Controller class CategoriaTest.phpController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 15:34:25 Error: [MissingTableException] Table usuarios for model User was not found in datasource default.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(3380): Model->setSource('usuarios')
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(1278): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/Helper/FormHelper.php(191): Model->schema()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/Helper/FormHelper.php(444): FormHelper->_introspectModel('User', 'fields')
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/View/Users/login.ctp(2): FormHelper->create('User')
+#5 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(908): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(872): View->_evaluate('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(463): View->_render('/Applications/M...')
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#10 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-03-12 15:34:46 Error: [MissingTableException] Table usuarios for model User was not found in datasource default.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(3380): Model->setSource('usuarios')
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(1278): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/Helper/FormHelper.php(191): Model->schema()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/Helper/FormHelper.php(444): FormHelper->_introspectModel('User', 'fields')
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/View/Users/login.ctp(2): FormHelper->create('User')
+#5 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(908): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(872): View->_evaluate('/Applications/M...', Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(463): View->_render('/Applications/M...')
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#9 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#10 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-03-12 16:07:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(646): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(1057): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(86): Model->find('first', Array)
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('1', '1')
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Component/AuthComponent.php(636): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Component/AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/UsersController.php(19): AuthComponent->login()
+#10 [internal function]: UsersController->login()
+#11 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2012-03-12 16:11:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`emisoft`.`categorias`, CONSTRAINT `fk_categoria_departamento1` FOREIGN KEY (`departamento_id`) REFERENCES `departamentos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `em...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(984): DboSource->execute('INSERT INTO `em...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(1705): DboSource->create(Object(Categoria), Array, Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/CategoriasController.php(81): Model->save(Array)
+#5 [internal function]: CategoriasController->add()
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-12 16:55:28 Error: [MissingControllerException] Controller class EmpresasController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 16:58:06 Error: [MissingControllerException] Controller class EmpresasController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 16:58:09 Error: [MissingControllerException] Controller class EmpresasController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 17:17:03 Error: [MissingControllerException] Controller class DepartamentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 17:17:36 Error: [MissingControllerException] Controller class DepartamentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 17:17:37 Error: [MissingControllerException] Controller class DepartamentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 17:17:37 Error: [MissingControllerException] Controller class DepartamentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 17:17:38 Error: [MissingControllerException] Controller class DepartamentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 17:17:52 Error: [MissingTableException] Table departmentos for model Departmento was not found in datasource default.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(3380): Model->setSource('departmentos')
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/DepartamentosController.php(27): Model->find('all')
+#3 [internal function]: DepartamentosController->index()
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(DepartamentosController), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-03-12 17:19:06 Error: [MissingTableException] Table departmentos for model Departmento was not found in datasource default.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(3380): Model->setSource('departmentos')
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2635): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/DepartamentosController.php(27): Model->find('all')
+#3 [internal function]: DepartamentosController->index()
+#4 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(DepartamentosController), Array)
+#5 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-03-12 17:19:58 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:20:00 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:20:03 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:23:03 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:24:04 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:24:06 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:24:06 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:24:08 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:24:09 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:24:10 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/emisoft_cp/app/View/Departamento/index.ctp" is missing.
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(962): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(DepartamentosController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-03-12 17:29:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`departamentos`, CONSTRAINT `fk_departamentos_empresas1` FOREIGN KEY (`empresa_id`) REFERENCES `empresas` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Empresa...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Empresa...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(AppModel), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/EmpresasController.php(71): Model->delete('1')
+#5 [internal function]: EmpresasController->delete('1')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(EmpresasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpresasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-12 17:30:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`emisoft`.`departamentos`, CONSTRAINT `fk_departamentos_empresas1` FOREIGN KEY (`empresa_id`) REFERENCES `empresas` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(436): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('DELETE `Empresa...', Array)
+#2 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Datasource/Database/Mysql.php(416): DboSource->execute('DELETE `Empresa...')
+#3 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Model/Model.php(2387): Mysql->delete(Object(AppModel), Array)
+#4 /Applications/MAMP/htdocs/emisoft_cp/app/Controller/EmpresasController.php(71): Model->delete('2')
+#5 [internal function]: EmpresasController->delete('2')
+#6 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Controller/Controller.php(488): ReflectionMethod->invokeArgs(Object(EmpresasController), Array)
+#7 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/MAMP/htdocs/emisoft_cp/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(EmpresasController), Object(CakeRequest), Object(CakeResponse))
+#9 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-03-12 17:34:54 Error: [MissingControllerException] Controller class DocumentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 17:35:06 Error: [MissingControllerException] Controller class DocumentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-12 17:35:21 Error: [MissingControllerException] Controller class DocumentosController could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-13 17:29:55 Error: [MissingControllerException] Controller class Test.php&debug=1Controller could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-03-14 14:52:31 Error: [MissingControllerException] Controller class Test.php&debug=1Controller could not be found.
+#0 /Applications/MAMP/htdocs/emisoft_cp/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
