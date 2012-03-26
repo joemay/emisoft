@@ -4,14 +4,14 @@
     <tr>
         <th><?php echo $this->Paginator->sort('Id', 'id'); ?></th> 
         <th><?php echo $this->Paginator->sort('Nombre', 'nombre'); ?></th> 
-        <th><?php echo $this->Paginator->sort('Empresa', 'empresa'); ?></th> 
+        <th><?php echo $this->Paginator->sort('Departamento', 'descripcion'); ?></th> 
         <th>&nbsp;</th> 
     </tr>
     <?php foreach ($departamentos as $departamento): ?>
         <tr>
             <td><?php echo $departamento['Departamento']['id']; ?></td>
             <td><?php echo $departamento['Departamento']['nombre']; ?></td>
-            <td><?php echo $departamento['Empresa']['nombre']; ?></td>
+            <td><?php echo $departamento['Departamento']['descripcion']; ?></td>
             <td>
                 <?php echo $this->Html->link('Edit', array('action' => 'edit', $departamento['Departamento']['id'])); ?>
 

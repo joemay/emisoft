@@ -7,23 +7,6 @@ CREATE SCHEMA IF NOT EXISTS `emisoft` DEFAULT CHARACTER SET latin1 ;
 USE `emisoft` ;
 
 -- -----------------------------------------------------
--- Table `emisoft`.`empresas`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `emisoft`.`empresas` ;
-
-CREATE  TABLE IF NOT EXISTS `emisoft`.`empresas` (
-  `id` INT NOT NULL AUTO_INCREMENT ,
-  `nombre` VARCHAR(45) NULL DEFAULT NULL ,
-  `razonSocial` VARCHAR(45) NULL DEFAULT NULL ,
-  `rfc` VARCHAR(45) NULL DEFAULT NULL ,
-  `fechaRegistro` VARCHAR(45) NULL DEFAULT NULL ,
-  `direccion` VARCHAR(200) NULL DEFAULT NULL ,
-  `perfil` VARCHAR(45) NULL DEFAULT NULL ,
-  PRIMARY KEY (`id`) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `emisoft`.`departamentos`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `emisoft`.`departamentos` ;
@@ -33,14 +16,7 @@ CREATE  TABLE IF NOT EXISTS `emisoft`.`departamentos` (
   `nombre` VARCHAR(45) NULL DEFAULT NULL ,
   `descripcion` VARCHAR(45) NULL DEFAULT NULL ,
   `perfil` VARCHAR(45) NULL DEFAULT NULL ,
-  `empresa_id` INT NOT NULL ,
-  PRIMARY KEY (`id`) ,
-  INDEX `fk_departamentos_empresas1` (`empresa_id` ASC) ,
-  CONSTRAINT `fk_departamentos_empresas1`
-    FOREIGN KEY (`empresa_id` )
-    REFERENCES `emisoft`.`empresas` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+  PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
 
@@ -86,22 +62,15 @@ CREATE  TABLE IF NOT EXISTS `emisoft`.`empleados` (
   `usuario` VARCHAR(45) NULL DEFAULT NULL ,
   `contrasena` VARCHAR(45) NULL DEFAULT NULL ,
   `departamento_id` INT NOT NULL ,
-  `empresa_id` INT NOT NULL ,
   `puesto_id` INT NOT NULL ,
   `usuario_id` INT NOT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_Empleado_departamento` (`departamento_id` ASC) ,
-  INDEX `fk_empleados_empresas1` (`empresa_id` ASC) ,
   INDEX `fk_empleados_puestos1` (`puesto_id` ASC) ,
   INDEX `fk_empleados_usuarios1` (`usuario_id` ASC) ,
   CONSTRAINT `fk_Empleado_departamento`
     FOREIGN KEY (`departamento_id` )
     REFERENCES `emisoft`.`departamentos` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_empleados_empresas1`
-    FOREIGN KEY (`empresa_id` )
-    REFERENCES `emisoft`.`empresas` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_empleados_puestos1`

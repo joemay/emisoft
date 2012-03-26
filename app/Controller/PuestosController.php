@@ -6,37 +6,37 @@
  */
 
 /**
- * Description of DepartamentosController
+ * Description of PuestosController
  *
  * @author Jose
  */
-class DepartamentosController extends AppController {
+class PuestosController extends AppController {
 
-    public $name = 'Departamentos';
+    public $name = 'Puestos';
     public $helpers = array('Html', 'Form');
     public $components = array('Session');
-    public $paginate = array('limit' => 10, 'order' => array('Departamento.id' => 'DESC'));
-    public $mensajeGuardar = "Se agrego un departamento";
-    public $mensajeActualizar = "Se actualizo el departamento";
-    public $mensajeBorrar = "Se eliminó un departamento";
-    public $mensajeErrorGuardar = "No se pudo agregar el departamento";
-    public $mensajeErrorActualizar = "No se pudo actualizar el departamento";
-    public $mensajeErrorBorrar = "No se eliminó el departamento";
+    public $paginate = array('limit' => 10, 'order' => array('Puesto.id' => 'DESC'));
+    public $mensajeGuardar = "Se agrego un puesto";
+    public $mensajeActualizar = "Se actualizó el puesto";
+    public $mensajeBorrar = "Se eliminó un puesto";
+    public $mensajeErrorGuardar = "No se pudo agregar el puesto";
+    public $mensajeErrorActualizar = "No se pudo actualizar el puesto";
+    public $mensajeErrorBorrar = "No se eliminó el puesto";
 
     public function index() {
-        $data = $this->Departamento->find('all');
-        $data = $this->paginate('Departamento');
-        $this->set('departamentos', $data);
+        $data = $this->Puesto->find('all');
+        $data = $this->paginate('Puesto');
+        $this->set('puestos', $data);
     }
 
     public function view($id = null) {
-        $this->Departamento->id = $id;
-        $this->set('categoria', $this->Departamento->read());
+        $this->Puesto->id = $id;
+        $this->set('puesto', $this->Puesto->read());
     }
 
     public function add() {
         if ($this->request->is('post')) {
-            if ($this->Departamento->save($this->request->data)) {
+            if ($this->Puesto->save($this->request->data)) {
                 $this->Session->setFlash($this->mensajeGuardar);
                 $this->redirect(array('action' => 'index'));
             } else {
@@ -46,11 +46,11 @@ class DepartamentosController extends AppController {
     }
 
     public function edit($id = null) {
-        $this->Departamento->id = $id;
+        $this->Puesto->id = $id;
         if ($this->request->is('get')) {
-            $this->request->data = $this->Departamento->read();
+            $this->request->data = $this->Puesto->read();
         } else {
-            if ($this->Departamento->save($this->request->data)) {
+            if ($this->Puesto->save($this->request->data)) {
                 $this->Session->setFlash($this->mensajeActualizar);
                 $this->redirect(array('action' => 'index'));
             } else {
@@ -64,7 +64,7 @@ class DepartamentosController extends AppController {
             throw new MethodNotAllowedException();
         }
 
-        if ($this->Departamento->delete($id)) {
+        if ($this->Puesto->delete($id)) {
             $this->Session->setFlash($this->mensajeBorrar);
             $this->redirect(array('action' => 'index'));
         }

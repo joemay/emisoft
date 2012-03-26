@@ -1,14 +1,14 @@
 <!-- File: /app/View/Posts/index.ctp -->
 
-<h1>Categorías</h1>
-<?php echo $this->Html->link('Agregar Categoria', array('controller' => 'categorias', 'action' => 'add')); ?>
+<h1>Empleados</h1>
+<?php echo $this->Html->link('Agregar Empleado', array('controller' => 'empleados', 'action' => 'add')); ?>
 
 
 <table>
     <tr>
         <th><?php echo $this->Paginator->sort('Id', 'id'); ?></th> 
         <th><?php echo $this->Paginator->sort('Nombre', 'nombre'); ?></th> 
-        <th><?php echo $this->Paginator->sort('Departamento', 'nombre'); ?></th> 
+        <th><?php echo $this->Paginator->sort('Apellido', 'apellido'); ?></th> 
         <th>&nbsp;</th> 
 
 
@@ -17,7 +17,7 @@
     <tr>
         <td><?php echo $empleado['Empleado']['id']; ?></td>
         <td><?php echo $empleado['Empleado']['nombre']; ?></td>
-        <td><?php echo $empleado['Departamento']['nombre']; ?></td>
+        <td><?php echo $empleado['Empleado']['apellido']; ?></td>
         
         
         <td>

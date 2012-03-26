@@ -52,6 +52,7 @@ class UsersController extends AppController {
                 $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
             }
         }
+        
     }
 
     public function edit($id = null) {

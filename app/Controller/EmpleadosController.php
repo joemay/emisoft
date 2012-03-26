@@ -6,16 +6,16 @@
  */
 
 /**
- * Description of CategoriasController
+ * Description of EmpleadosController
  *
  * @author Jose
  */
-class CategoriasController extends AppController {
+class EmpleadosController extends AppController {
 
-    public $name = 'Categorias';
+    public $name = 'Empleados';
     public $helpers = array('Html', 'Form');
     public $components = array('Session');
-    public $paginate = array('limit' => 10, 'order' => array('Categoria.id' => 'DESC'));
+    public $paginate = array('limit' => 10, 'order' => array('Empleado.id' => 'DESC'));
     public $mensajeGuardar = "Se agrego una categoría";
     public $mensajeActualizar = "Se actualizó la categoría";
     public $mensajeBorrar = "Se eliminó una categoría";
@@ -24,14 +24,14 @@ class CategoriasController extends AppController {
     public $mensajeErrorBorrar = "No se eliminó la categoría";
 
     public function index() {
-        $data = $this->Categoria->find('all');
-        $data = $this->paginate('Categoria');
-        $this->set('categorias', $data);
+        $data = $this->Empleado->find('all');
+        $data = $this->paginate('Empleado');
+        $this->set('empleados', $data);
     }
 
     public function view($id = null) {
-        $this->Categoria->id = $id;
-        $this->set('categoria', $this->Categoria->read());
+        $this->Empleado->id = $id;
+        $this->set('empleado', $this->Empleado->read());
     }
 
     public function add() {
@@ -41,11 +41,20 @@ class CategoriasController extends AppController {
             'order' => array('Departamento.id DESC')
         );
 
-        $departamentos = $this->Categoria->Departamento->find("list", $parametrosDeBusqueda);
+        $departamentos = $this->Empleado->Departamento->find("list", $parametrosDeBusqueda);
         $this->set('departamentos', $departamentos);
+        
+        $parametrosDeBusqueda = array(
+            'fields' => array('Puesto.id', 'Puesto.nombre'),
+            'order' => array('Puesto.id DESC')
+        );
+
+        $puestos = $this->Empleado->Puesto->find("list", $parametrosDeBusqueda);
+        $this->set('puestos', $puestos);
+        
 
         if ($this->request->is('post')) {
-            if ($this->Categoria->save($this->request->data)) {
+            if ($this->Empleado->save($this->request->data)) {
                 $this->Session->setFlash($this->mensajeGuardar);
                 $this->redirect(array('action' => 'index'));
             } else {
@@ -55,9 +64,9 @@ class CategoriasController extends AppController {
     }
 
     public function edit($id = null) {
-        $this->Categoria->id = $id;
+        $this->Empleado->id = $id;
         if ($this->request->is('get')) {
-            $this->request->data = $this->Categoria->read();
+            $this->request->data = $this->Empleado->read();
 
 
             $parametrosDeBusqueda = array(
@@ -65,10 +74,10 @@ class CategoriasController extends AppController {
                 'order' => array('Departamento.id DESC')
             );
 
-            $departamentos = $this->Categoria->Departamento->find("list", $parametrosDeBusqueda);
+            $departamentos = $this->Empleado->Departamento->find("list", $parametrosDeBusqueda);
             $this->set('departamentos', $departamentos);
         } else {
-            if ($this->Categoria->save($this->request->data)) {
+            if ($this->Empleado->save($this->request->data)) {
                 $this->Session->setFlash($this->mensajeActualizar);
                 $this->redirect(array('action' => 'index'));
             } else {
@@ -84,7 +93,7 @@ class CategoriasController extends AppController {
 
 
 
-        if ($this->Categoria->delete($id)) {
+        if ($this->Empleado->delete($id)) {
             $this->Session->setFlash($this->mensajeBorrar);
             $this->redirect(array('action' => 'index'));
         }

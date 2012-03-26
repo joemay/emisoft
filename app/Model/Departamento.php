@@ -14,13 +14,6 @@ class Departamento extends AppModel {
 
     public $name = 'Departamento';
     
-      public $belongsTo = array(
-        'Empresa' => array(
-            'className' => 'Empresa',
-            'foreignKey' => 'empresa_id'
-        )
-      
-    );
     
     public $hasMany = array(
         'Categoria' => array(
@@ -29,11 +22,19 @@ class Departamento extends AppModel {
             'conditions' => array(),
             'order' => 'Categoria.id DESC',
             'dependent' => true
+        ),
+         'Empleado' => array(
+            'className' => 'Empleado',
+            'foreignKey' => 'departamento_id',
+            'conditions' => array(),
+            'order' => 'Empleado.id DESC',
+            'dependent' => true
         )
     );
     
+    
+    
 
-    //put your code here
 }
 
 ?>

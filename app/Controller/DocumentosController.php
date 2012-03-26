@@ -16,12 +16,12 @@ class DocumentosController extends AppController {
     public $helpers = array('Html', 'Form');
     public $components = array('Session');
     public $paginate = array('limit' => 10, 'order' => array('Documento.id' => 'DESC'));
-    public $mensajeGuardar = "Se agrego una categoría";
-    public $mensajeActualizar = "Se actualizóla categoría";
-    public $mensajeBorrar = "Se eliminó una categoría";
-    public $mensajeErrorGuardar = "No se pudo agregar la categoría";
-    public $mensajeErrorActualizar = "No se pudo actualizar la categoría";
-    public $mensajeErrorBorrar = "No Se eliminó la categoría";
+    public $mensajeGuardar = "Se agrego un documento";
+    public $mensajeActualizar = "Se actualizó el documento";
+    public $mensajeBorrar = "Se eliminó un documento";
+    public $mensajeErrorGuardar = "No se pudo agregar el documento";
+    public $mensajeErrorActualizar = "No se pudo actualizar el documento";
+    public $mensajeErrorBorrar = "No se eliminó el documento";
 
     public function index() {
         $data = $this->Documento->find('all');
@@ -101,9 +101,7 @@ class DocumentosController extends AppController {
         if ($this->request->is('get')) {
             throw new MethodNotAllowedException();
         }
-
-
-
+        
         if ($this->Documento->delete($id)) {
             $this->Session->setFlash($this->mensajeBorrar);
             $this->redirect(array('action' => 'index'));
