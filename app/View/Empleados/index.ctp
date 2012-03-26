@@ -1,6 +1,6 @@
 <!-- File: /app/View/Posts/index.ctp -->
 
-<h1>Empleados</h1>
+<h2>Empleados</h2>
 <?php echo $this->Html->link('Agregar Empleado', array('controller' => 'empleados', 'action' => 'add')); ?>
 
 
