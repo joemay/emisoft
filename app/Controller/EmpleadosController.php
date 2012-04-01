@@ -54,9 +54,35 @@ class EmpleadosController extends AppController {
         
 
         if ($this->request->is('post')) {
-            if ($this->Empleado->save($this->request->data)) {
-                $this->Session->setFlash($this->mensajeGuardar);
-                $this->redirect(array('action' => 'index'));
+            
+            $newData['User']['username'] = $this->request->data['Empleado']['username'];
+            $newData['User']['password'] = $this->request->data['Empleado']['password'];
+            
+            //print_r($newData);
+
+            //$newIngredientId = $this->User->id;
+            
+            $this->Empleado->User->save($newData);
+            
+            if ( $this->Empleado->User->id ) {
+                
+                 $empleadoData = $this->request->data;
+
+                $empleadoData['Empleado']['usuario_id'] = $this->Empleado->User->id;
+                
+                
+                //print_r($empleadoData);
+                
+                
+                 if ( $this->Empleado->save($empleadoData)) {
+                     $this->Session->setFlash($this->mensajeGuardar);
+                       $this->redirect(array('action' => 'index'));
+                 }
+                
+                 
+                
+      
+                
             } else {
                 $this->Session->setFlash($this->mensajeErrorGuardar);
             }
@@ -97,6 +123,15 @@ class EmpleadosController extends AppController {
             $this->Session->setFlash($this->mensajeBorrar);
             $this->redirect(array('action' => 'index'));
         }
+    }
+    
+    public function search() {
+            $terminoBusqueda = $this->request->data['Empleado']['nombre'];
+            $conditions =  array('Empleado.nombre LIKE' => '%' .$terminoBusqueda. '%');
+            $data = $this->paginate('Empleado');
+            $data = $this->Empleado->find('all', array('conditions' => $conditions));
+            $this->Session->setFlash("Resultados para la busqueda de \"" .$terminoBusqueda ."\"" );
+            $this->set('empleados', $data);        
     }
 
 }

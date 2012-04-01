@@ -40,7 +40,7 @@ class CategoriasController extends AppController {
             'fields' => array('Departamento.id', 'Departamento.nombre'),
             'order' => array('Departamento.id DESC')
         );
-
+        
         $departamentos = $this->Categoria->Departamento->find("list", $parametrosDeBusqueda);
         $this->set('departamentos', $departamentos);
 
@@ -88,6 +88,15 @@ class CategoriasController extends AppController {
             $this->Session->setFlash($this->mensajeBorrar);
             $this->redirect(array('action' => 'index'));
         }
+    }
+
+    public function search() {
+            $terminoBusqueda = $this->request->data['Categoria']['nombre'];
+            $conditions =  array('Categoria.nombre LIKE' => '%' .$terminoBusqueda. '%');
+            $data = $this->paginate('Categoria');
+            $data = $this->Categoria->find('all', array('conditions' => $conditions));
+            $this->Session->setFlash("Resultados para la busqueda de \"" .$terminoBusqueda ."\"" );
+            $this->set('categorias', $data);        
     }
 
 }
