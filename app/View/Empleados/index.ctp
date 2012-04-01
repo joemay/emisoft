@@ -1,7 +1,16 @@
 <!-- File: /app/View/Posts/index.ctp -->
 
 <h2>Empleados</h2>
-<?php echo $this->Html->link('Agregar Empleado', array('controller' => 'empleados', 'action' => 'add')); ?>
+
+    <?php
+// Formulario de Busqueda
+echo $this->Form->create('Empleado', array('action' => 'search', "class" => "buscarForm"));
+echo $this->Form->input('nombre');
+echo $this->Form->end('Buscar');
+?>
+    
+    
+    <?php echo $this->Html->link('Agregar Empleado', array('controller' => 'empleados', 'action' => 'add')); ?>
 
 
 <table>

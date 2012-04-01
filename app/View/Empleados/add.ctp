@@ -2,9 +2,8 @@
 
 <h1>Editar Empleado</h1>
 
-
 <?php
-echo $this->Form->create('Empleado', array('action' => 'edit'));
+echo $this->Form->create('Empleado', array('action' => 'add'));
 echo $this->Form->input('nombre');
 echo $this->Form->input('apellido');
 echo $this->Form->input('username');
@@ -20,11 +19,6 @@ echo $this->Form->input('departamento_id', $parametros);
 
 $parametros = array('options' => $puestos );
 echo $this->Form->input('puesto_id', $parametros);
-
-
-
-
-
 
 echo $this->Form->end('Guardar');
 ?>
