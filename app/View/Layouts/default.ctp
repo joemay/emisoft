@@ -34,6 +34,45 @@
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+    
+    <style type="text/css">
+        
+     .buscarForm {
+     display: block;
+     clear: both;
+    }
+    
+    .buscarForm .input.text {
+     width: 200px;  
+    
+    }
+    
+    .buscarForm .input.text input {
+     width: 200px;  
+     float: left; 
+    }
+    
+    .buscarForm .input.text label {
+     display: none;  
+    }
+    
+    .buscarForm .submit  {
+     float: left;
+    }
+    
+    .add{
+        
+        display: block;
+        clear: both;
+    }
+    
+    
+    
+    
+    
+</style>
+    
+    
 </head>
 <body>  
 	<div id="container">
