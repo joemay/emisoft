@@ -16,9 +16,8 @@ class Empleado extends AppModel {
 
     public $name = 'Empleado';
     //public $belongsTo = 'Departamento';
-    //public $hasOne = 'Puesto';
-    
-    
+
+ 
     public $belongsTo = array(
         'Departamento' => array(
             'className' => 'Departamento',
@@ -33,7 +32,15 @@ class Empleado extends AppModel {
             'conditions' => array(),
             'order' => 'Puesto.id DESC',
             'dependent' => true
+        ),
+         'User' => array(
+            'className' => 'User',
+            'foreignKey' => 'usuario_id',
+            'conditions' => array(),
+            'order' => 'Puesto.id DESC',
+            'dependent' => true
         )
+      
     );
 
     
