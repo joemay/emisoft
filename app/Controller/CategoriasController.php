@@ -12,7 +12,7 @@
  */
 class CategoriasController extends AppController {
 
-    public $name = 'Categorias';
+    public $name = 'Categorias' ;
     public $helpers = array('Html', 'Form');
     public $components = array('Session');
     public $paginate = array('limit' => 10, 'order' => array('Categoria.id' => 'DESC'));
